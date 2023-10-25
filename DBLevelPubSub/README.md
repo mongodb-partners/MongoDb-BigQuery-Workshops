@@ -3,15 +3,15 @@
   * In the Google Cloud Console, navigate to "Pub/Sub" from the left-side menu.
   * Click on the "Topics" tab.
   * Click the "Create a topic" button.
-  * Give your topic a name, e.g., "my-topic," and click "Create."
+  * Give your topic a name, e.g., "Testpublishtopic1," and click "Create."
   * If you need to define the message structure, click the "Use a schema" checkbox.
   
   ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/48faec53-39c2-4411-a0c9-9b0ff6d93f24)
 
 - **Create a Pub/Sub Subscription:**
-  * From the "Topics" tab, select the topic you just created (e.g., "my-topic").
+  * From the "Topics" tab, select the topic you just created (e.g., "Testpublishtopic1").
   * Click on the "Create subscription" button.
-  * Provide a name for your subscription (e.g., "my-subscription").
+  * Provide a name for your subscription (e.g., "databaselevsubscription").
   * Configure other settings, such as acknowledgment mode and delivery type, as per your requirements.
   * Click "Create" to create the subscription.
   
@@ -28,7 +28,7 @@
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.
-2. Update all required fields in the .env file with your respective details.
+2. Update the required configuration details in the .env file.
 3. Open the terminal in the respective project folder and run the command:
 ```bash
 python main.py
