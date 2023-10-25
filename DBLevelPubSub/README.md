@@ -19,7 +19,7 @@
   
   ![Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/cb0a6cdf-1a8f-4e33-8784-fec8dfbda77e)
 
-## Pub/Sub in Listening Database Level Change Stream Document
+## Listening Database Level Change Stream changes
 - A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. You can use this feature to track changes to documents within any collection in the database.
 
 - Format the message that must be published to the PUB/SUB which we created with the above steps in GCP.
