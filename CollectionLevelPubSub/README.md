@@ -4,15 +4,15 @@
 - In the Google Cloud Console, navigate to "Pub/Sub" from the left-side menu.
 - Click on the "Topics" tab.
 - Click the "Create a topic" button.
-- Give your topic a name, e.g., "my-topic," and click "Create."
+- Give your topic a name, e.g., "collectionLevelChangestreamTopic," and click "Create."
 - If you need to define the message structure, click the "Use a schema" checkbox.
 
   ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/90228a4e-e735-4b12-a5b7-672c76980c15)
 
 ### Create a Pub/Sub Subscription
-- From the "Topics" tab, select the topic you just created (e.g., "my-topic").
+- From the "Topics" tab, select the topic you just created (e.g., "collectionLevelChangestreamTopic").
 - Click the "Create subscription" button.
-- Provide a name for your subscription (e.g., "my-subscription").
+- Provide a name for your subscription (e.g., "collectionLevelChangestreamTopic-sub").
 - Configure other settings, such as acknowledgment mode and delivery type, as per your requirements.
 - Click "Create" to create the subscription.
 
