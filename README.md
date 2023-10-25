@@ -22,16 +22,6 @@
 - **Ref Link**: 
   * https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/.
 
-## Create Confluent Account
-- **Create an Account**:
-  * If you don't already have one, create an account with your Confluent provider.
-- **Log in**:
-  * Log in to the account with the credentials.
-- **Create Cluster**:
-  * Click on the Environment and select "Default," then select cluster and create a cluster with a specific name.
-- **Ref Link**:
-  * https://docs.confluent.io/cloud/current/get-started/index.html.
-
 ## Software to be Installed to Run the Application
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
 
