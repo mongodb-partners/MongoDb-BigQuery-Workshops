@@ -31,17 +31,17 @@
   
   ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
 
-## Dataflow Template for PUB/Sub to BQ
-- Publishing the data to the PUB/Sub topic will reflect in the Job graph.
 - **Ref Link**:
   * https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery
-  
-  ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
 
-- Once after publishing, the graph will reflect in the Dataflow job created as below.
+- **Configuration response for dataflow Template in Pub/Sub to BQ**:
+  * Configuring the dataflow template with schema to the topic if we wants to capture the published message to the Big Query table.
+  * Publish the message with the defined schema to the topic.
+  * This message will get reflected in the big query destination table with the defined schema.
+  * Refer the screenshots as the response of the configuration process.
+      
+  ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
   
   ![Dataflow Job Graph](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/96880d32-6f05-408f-b736-8796f8c1dddf)
-
-- Published messages will get reflected in the BigQuery destination table.
   
   ![BigQuery Destination Table](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/0365fdc3-3dc1-4830-82e5-9b88d91de613)
