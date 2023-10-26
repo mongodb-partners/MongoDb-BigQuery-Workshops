@@ -9,7 +9,7 @@
   ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/48faec53-39c2-4411-a0c9-9b0ff6d93f24)
 
 - **Create a Pub/Sub Subscription:**
-  * Create the GCP pub/Sub topic
+  * Create the GCP pub/Sub Subscription
   * Configure other settings, such as acknowledgment mode and delivery type, as per your requirements.
   * For more details follow the below link to create Subscription in GCP
 - **Ref Link**:
