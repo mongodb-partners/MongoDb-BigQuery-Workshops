@@ -8,7 +8,7 @@
 
   ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/7e092f7d-178a-4da6-b8ff-39c82d033cc7)
 
-- **Create PUB/SUB Schema** :
+- **Create PUB/SUB Schema**:
   * Create the schema to the topic as per the requirement
   * Follow the link to create the schema
 - **Ref Link**:
@@ -46,7 +46,7 @@
 
   ![Create DataSet](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/686850e2-ba3c-4ea3-aca8-8f7a1a83c459)
 
-- **Table Creation:**
+- **Table Creation**:
   * Create a table for the schema defined in Bigquery.
 - **Ref Link**:
   * https://cloud.google.com/bigquery/docs/tables
