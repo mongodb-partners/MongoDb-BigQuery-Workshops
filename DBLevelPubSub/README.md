@@ -1,19 +1,19 @@
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
   * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the "Use a schema" checkbox.
+  * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * For more details follow the below link to create Topic in GCP
-- **Ref Link**:
-  * https://cloud.google.com/pubsub/docs/create-topic
+  * **Ref Link**:
+    * https://cloud.google.com/pubsub/docs/create-topic
 
   ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/48faec53-39c2-4411-a0c9-9b0ff6d93f24)
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription
-  * Configure other settings, such as acknowledgment mode and delivery type, as per your requirements.
+  * Configure other settings, such as acknowledgment mode and **Delivery type: PULL**, as per your requirements.
   * For more details follow the below link to create Subscription in GCP
-- **Ref Link**:
-  * https://cloud.google.com/pubsub/docs/create-subscription
+  * **Ref Link**:
+    * https://cloud.google.com/pubsub/docs/create-subscription
   
   ![Create a Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/c997b4a0-c836-47f9-8b16-1a625acf8fdd)
   
