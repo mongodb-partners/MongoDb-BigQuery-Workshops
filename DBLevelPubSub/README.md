@@ -14,10 +14,14 @@
   * For more details follow the below link to create Subscription in GCP
   * **Ref Link**:
     * https://cloud.google.com/pubsub/docs/create-subscription
+
+    **Screenshot 1 :**
   
-  ![Create a Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/c997b4a0-c836-47f9-8b16-1a625acf8fdd)
+    ![Create a Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/c997b4a0-c836-47f9-8b16-1a625acf8fdd)
+
+    **Screenshot 2 :**
   
-  ![Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/cb0a6cdf-1a8f-4e33-8784-fec8dfbda77e)
+    ![Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/cb0a6cdf-1a8f-4e33-8784-fec8dfbda77e)
 
 ## Listening Database Level Change Stream changes
 - A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. You can use this feature to track changes to documents within any collection in the database.
