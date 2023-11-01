@@ -39,7 +39,7 @@
   * Publish the message with the defined schema to the topic.
   * Use the **"Job Dataflow Template : PubSub Subscription to BigQuery"** 
   * This message will get reflected in the big query destination table with the defined schema.
-  * Refer the screenshots as the response of the configuration process.
+  * Refer the screenshots for configuration process.
       
   ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
   
