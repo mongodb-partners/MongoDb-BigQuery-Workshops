@@ -62,7 +62,9 @@
 
   ![Create a Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/1902f905-cc2f-4764-a860-2b5d10224941)
 
-## BigQuery Table:
+## Exporting to BigQuery:
+  * Publish the messages to the Topic created using the change stream as discussed [here](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/CollectionLevelPubSub/README.md)
+
   * In the Bigquery Tab you could see the reflection of the data that we published to the topic we created.
 
   ![BigQuery Table](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/142e4dc9-5ca6-4b52-985b-4173a5fe488b)
