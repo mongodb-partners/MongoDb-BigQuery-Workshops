@@ -34,7 +34,7 @@
   * **Ref Link**:
     * https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery
 
-## Dataflow Template in Pub/Sub to BQ configuration:
+## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
   * Publish the message with the defined schema to the topic.
   * Use the **"Job Dataflow Template : PubSub Subscription to BigQuery"** 
