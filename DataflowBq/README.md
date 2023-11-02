@@ -4,19 +4,19 @@
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
   
-  ![Create PUB/SUB Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/7e092f7d-178a-4da6-b8ff-39c82d033cc7)
+  ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f86a5edc-336a-40e0-a9cd-1d57ea9c2c60)
 
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery.
   * Detailed steps for GCP table creation : [Create GCP Table](https://cloud.google.com/bigquery/docs/tables)
   
-  ![Table Creation](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/3abc3b11-f1a6-4fd0-8ebb-9a57c84422eb)
+  ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
   * Detailed steps for GCP Bucket creation : [Create GCP Bucket](https://cloud.google.com/storage/docs/creating-buckets)
   
-  ![Create GCP Bucket](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/51dc1308-918e-4906-9253-ae53f8ff2083)
+  ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
   
 - **Create Dataflow Job Template:**
   * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
