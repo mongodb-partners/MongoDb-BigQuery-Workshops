@@ -4,7 +4,7 @@
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
 
-  ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/33313e48-f2b5-4972-abb1-88a9624919a4)
+    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/33313e48-f2b5-4972-abb1-88a9624919a4)
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription
