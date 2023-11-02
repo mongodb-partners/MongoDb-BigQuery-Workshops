@@ -4,7 +4,7 @@
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
 
-  ![Create a Pub/Sub Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/48faec53-39c2-4411-a0c9-9b0ff6d93f24)
+  ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/33313e48-f2b5-4972-abb1-88a9624919a4)
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription
@@ -13,11 +13,11 @@
 
     **Screenshot 1 :**
 
-    ![Create a Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/b56a07f0-a7c3-42a4-8899-518992077e86)
+    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/59824c75-3727-46b8-9b73-aa77b9607f66)
 
     **Screenshot 2 :**
   
-    ![Pub/Sub Subscription](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/c79f6e03-a421-45cf-9cff-86111c35327b)
+    ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/855e0a3f-1468-4381-a554-5f139f26e1eb)
 
 ## Listening to collection Level changes
 - A collection-level change stream in MongoDB allows you to monitor and capture changes occurring in a specific collection. You can use this feature to track changes to documents within that collection.
@@ -25,7 +25,7 @@
 - The Pub/Sub topic then sends the change stream document to all subscribed clients in real-time.
 - Format the message that has to be published to the PUB/SUB, which we created in the above steps in GCP.
 
-  ![Application Uses Pub/Sub](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/04271301-e466-4061-b114-242e2142249d)
+  ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/54aa7265-5ed2-4bd3-b8d9-c41511a76a10)
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.
