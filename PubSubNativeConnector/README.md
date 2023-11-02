@@ -4,7 +4,7 @@
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
 
-  ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/eb232b55-2724-4cd1-993b-cf41d55c588d)
+    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/eb232b55-2724-4cd1-993b-cf41d55c588d)
 
 - **Create PUB/SUB Schema**:
   * Create the schema to the topic as per the requirement
@@ -93,11 +93,11 @@
 ```
   **Screenshot 1:**
   
-  ![Create PUB/SUB Schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/23f4fa99-b64e-450a-9239-3d30c84f76f0)
+    ![Create PUB/SUB Schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/23f4fa99-b64e-450a-9239-3d30c84f76f0)
 
   **Screenshot 2:**
   
-  ![Create PUB/SUB Schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a2a635a9-3a1c-4b3d-b505-4d8accc44a57)
+    ![Create PUB/SUB Schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a2a635a9-3a1c-4b3d-b505-4d8accc44a57)
 
 - **Create DataSet**:
   * In the Big Query screen create the Dataset as per the requirement to the Selected Project.
