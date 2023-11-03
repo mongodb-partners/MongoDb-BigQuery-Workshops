@@ -9,7 +9,7 @@
   * Create a Cluster and whitelist the required IPs to be accessed.
 - **Create Database and Collection**:
   * Create the Database and the Collection in the Cluster.
-- Detailed steps for cluster creation:[Cluster Creation](https://www.mongodb.com/docs/guides/atlas/cluster/)
+- Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
 
 ## Create GCP Account
 - **Create an Account**:
@@ -18,7 +18,7 @@
   * Log in to the account with the credentials.
 - **Enable APIs**:
   * Click on the APIs and Service in the left panel, then enable the API's services.
-- Detailed steps for creating GCP Account:[GCP Account Creation](https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/)
+- Detailed steps for creating GCP Account can be found [here](https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/)
 
 ## Software to be Installed to Run the Application
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
