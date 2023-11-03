@@ -2,14 +2,14 @@
 - **Create a Pub/Sub Topic:**
   * Create the GCP pub/Sub topic
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
 
     ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/33313e48-f2b5-4972-abb1-88a9624919a4)
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription
   * Configure other settings, such as acknowledgment mode and **Delivery type: Pull**, as per your requirements.
-  * Detailed steps for Subscription creation : [Create Subscription in GCP](https://cloud.google.com/pubsub/docs/create-subscription)
+  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription)
 
     **Screenshot 1 :**
 
