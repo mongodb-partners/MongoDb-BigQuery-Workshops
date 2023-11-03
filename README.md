@@ -11,6 +11,9 @@
   * Create the Database and the Collection in the Cluster.
 - Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
 
+  **Note:**
+    For the scope of this workshop, we will be using this sample data provided by Atlas **"sample_analytics.customers"**
+
 ## Create GCP Account
 - **Create an Account**:
   * If you don't already have one, create an account with your GCP provider.
@@ -72,3 +75,5 @@ Now, you're all set to use the application with the required dependencies in pla
 ## Steps to run each Projects
 
 For Each Project run the main.py in its respective folder.
+
+
