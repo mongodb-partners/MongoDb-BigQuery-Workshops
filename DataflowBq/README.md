@@ -21,11 +21,9 @@
 - **Create Dataflow Job Template:**
   * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
   * Check the status once the job is created
-  * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/running-templates)
+  * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   
     ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
-
-  * Detailed steps to create the job template for pubsub to BQ can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
