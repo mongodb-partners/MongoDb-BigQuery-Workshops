@@ -2,30 +2,30 @@
 - **Pub/Sub Topic creation**:
   * Create the GCP pub/Sub topic
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation : [Create Topic in GCP](https://cloud.google.com/pubsub/docs/create-topic)
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
   
     ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f86a5edc-336a-40e0-a9cd-1d57ea9c2c60)
 
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery.
-  * Detailed steps for GCP table creation : [Create GCP Table](https://cloud.google.com/bigquery/docs/tables)
+  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
   
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
-  * Detailed steps for GCP Bucket creation : [Create GCP Bucket](https://cloud.google.com/storage/docs/creating-buckets)
+  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
   
     ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
   
 - **Create Dataflow Job Template:**
   * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
   * Check the status once the job is created
-  * Detailed steps to create Dataflow Job template: [Create Job template](https://cloud.google.com/dataflow/docs/guides/templates/running-templates)
+  * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/running-templates)
   
     ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
 
-  * Detailed steps to create the job template for pubsub to BQ : [PubSub-To-bq](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
+  * Detailed steps to create the job template for pubsub to BQ can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
