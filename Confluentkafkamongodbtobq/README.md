@@ -29,7 +29,7 @@
   
   * Detailed steps for creating the MongoDb atlas sources can be found [here](https://docs.confluent.io/cloud/current/connectors/cc-mongo-db-source.hl#)
  
-  ![MongoDb Atlas Source](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0f6f64ed-8b6c-485b-bb4b-7e6d369d15e2)
+   ![MongoDb Atlas Source](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0f6f64ed-8b6c-485b-bb4b-7e6d369d15e2)
 
 - **Create Service Api Key:**
   * Create the Service account in the GCP
@@ -51,7 +51,7 @@
 
   * Detailed steps for creating the Google BigQuery Sink connector can be found [here](https://docs.confluent.io/cloud/current/connectors/cc-gcp-bigquery-sink.html)
  
-  ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc2f1e06-cc50-4186-add7-dc9acbbd02fc)
+   ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc2f1e06-cc50-4186-add7-dc9acbbd02fc)
 ## MongoDB to BigQuery with kafka confluent configuration**:
   * Create the Cluster with Two connector in the confluent account
      - Follow the steps to create the **"MongoDb Atlas Source connector"**
@@ -61,7 +61,7 @@
        ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc9708b1-b5e9-4ce6-b036-f0fd0c147f93)
 
      **Screenshot 2:**
-       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/956f30c5-9d52-4ce0-bcdb-81b5a862f066)
+       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/2f1d4174-a386-488c-939c-761f63ee6755)
 
      - Follow the steps to create the **"Google BigQuery Sink"**
      - Once Sink connector is created inserted data will get reflected in the Big query table
