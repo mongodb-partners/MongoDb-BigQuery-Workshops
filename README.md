@@ -9,8 +9,10 @@
   * Create a Cluster and whitelist the required IPs to be accessed.
 - **Create Database and Collection**:
   * Create the Database and the Collection in the Cluster.
-- **Ref Link**: 
-  * https://www.mongodb.com/docs/guides/atlas/cluster/.
+- Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
+
+  **Note:**
+    For the scope of this workshop, we will be using this sample data provided by Atlas **"sample_analytics.customers"**
 
 ## Create GCP Account
 - **Create an Account**:
@@ -19,8 +21,7 @@
   * Log in to the account with the credentials.
 - **Enable APIs**:
   * Click on the APIs and Service in the left panel, then enable the API's services.
-- **Ref Link**: 
-  * https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/.
+- Detailed steps for creating GCP Account can be found [here](https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/)
 
 ## Software to be Installed to Run the Application
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
@@ -74,3 +75,5 @@ Now, you're all set to use the application with the required dependencies in pla
 ## Steps to run each Projects
 
 For Each Project run the main.py in its respective folder.
+
+
