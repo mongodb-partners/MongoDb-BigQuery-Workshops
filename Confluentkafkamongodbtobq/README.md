@@ -1,48 +1,74 @@
 ## Pre-requisite
-- **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Follow the below link to create Topic in GCP
-  * **Ref Link**:
-    * https://cloud.google.com/pubsub/docs/create-topic
-  
-  ![Create PUB/SUB Topic](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/7e092f7d-178a-4da6-b8ff-39c82d033cc7)
+- **Confluent Account Creation**
+  * Create a user confluent account creation
+  * Detailed steps for creating the confluent account can be found [here](https://docs.confluent.io/cloud/current/get-started/index.html)
 
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery.
-  * **Ref Link**:
-    * https://cloud.google.com/bigquery/docs/tables
+  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
   
-  ![Table Creation](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/3abc3b11-f1a6-4fd0-8ebb-9a57c84422eb)
+    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
-  * **Ref Link**:
-    * https://cloud.google.com/storage/docs/creating-buckets
+  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
   
-  ![Create GCP Bucket](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/51dc1308-918e-4906-9253-ae53f8ff2083)
+    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
   
-- **Create Dataflow Job Template:**
-  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
-  * Check the status once the job is created
-  * Follow the below link to create dataflow template
-  * **Ref Link**:
-    * https://cloud.google.com/dataflow/docs/guides/templates/running-templates
+- **Create MongoDb Atlas Source connector:**
+  * Click on the Add Connector button select **"MongoDb Atlas Source"**
+    - In "Topic selection" e.g : "Customer_kafka_test"
+    - In "Kafka credentials" Use the exsisting key or Generate the API keys
+    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.
+    - In "Configuration" 
+        * Output Kafka record value format : **"AVRO"**
+        * Advanced Configuration
+            **"Publish full document only" : True**
+    - In "sizing" just click continue 
+    - In "Review and launch" Give the connector name **e.g "MongoDbAtlasSourceConnector_Customer_kafka_test"**
   
-  ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
+  * Detailed steps for creating the MongoDb atlas sources can be found [here](https://docs.confluent.io/cloud/current/connectors/cc-mongo-db-source.hl#)
+ 
+  ![MongoDb Atlas Source](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0f6f64ed-8b6c-485b-bb4b-7e6d369d15e2)
 
-  * **Ref Link**:
-    * https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery
+- **Create Service Api Key:**
+  * Create the Service account in the GCP
+  * Detailed steps for creating the service api keys can be found [here](https://developers.google.com/workspace/guides/create-credentials)
 
-## Dataflow Template in Pub/Sub to BQ configuration**:
-  * Use the Pub/Sub topic which we created with the **"Use a schema"**
-  * Publish the message with the defined schema to the topic.
-  * Use the **"Job Dataflow Template : PubSub Subscription to BigQuery"** 
-  * This message will get reflected in the big query destination table with the defined schema.
-  * Refer the screenshots as the response of the configuration process.
-      
-  ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
-  
-  ![Dataflow Job Graph](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/96880d32-6f05-408f-b736-8796f8c1dddf)
-  
-  ![BigQuery Destination Table](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/0365fdc3-3dc1-4830-82e5-9b88d91de613)
+- **Create Google BigQuery Sink connector:**
+  * Click on the Add Connector button select **"Google BigQuery Sink"**
+    - In "Topic selection" select the topic that we want to sink with **"Customer-kafka-test.sample_analytics.Customer"**
+    - In "Kafka credentials" Use the exsisting key or Generate the API keys
+    - In "Authentication"
+        * Upload the downloaded API key that we downloaded from the GCP profile
+    - In "Configuration"
+       * Input Kafka record value format : **"AVRO"**
+       * Advanced configurations
+           - Input Kafka record key format : **"String"**
+           - Auto create tables : **True**
+    - In "sizing" just click continue 
+    - In "Review and launch" Give the connector name **e.g "BigQuerySinkConnector_Customer_kafka_sink"**
+
+  * Detailed steps for creating the Google BigQuery Sink connector can be found [here](https://docs.confluent.io/cloud/current/connectors/cc-gcp-bigquery-sink.html)
+ 
+  ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc2f1e06-cc50-4186-add7-dc9acbbd02fc)
+## MongoDB to BigQuery with kafka confluent configuration**:
+  * Create the Cluster with Two connector in the confluent account
+     - Follow the steps to create the **"MongoDb Atlas Source connector"**
+     - Once connector is created insert the document to the "collection" that we have configured in the Source connector
+
+     **Screenshot 1:**
+       ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc9708b1-b5e9-4ce6-b036-f0fd0c147f93)
+
+     **Screenshot 2:**
+       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/956f30c5-9d52-4ce0-bcdb-81b5a862f066)
+
+     - Follow the steps to create the **"Google BigQuery Sink"**
+     - Once Sink connector is created inserted data will get reflected in the Big query table
+
+     **Screenshot 1:**
+       ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ab96dc11-78e3-4942-a1ce-96e2fdd7ed58)
+
+     **Screenshot 2:**
+       ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/58682ba4-9364-470a-96ca-5e0e1278ce97)
+     
