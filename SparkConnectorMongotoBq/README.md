@@ -1,11 +1,13 @@
 ## Pre-requisite
-- ** To use pyspark in the code need to innstall pyspark 
+- **Install pyspark :**
+  * To use pyspark in the code need to install pyspark with the below command
      ```bash
      pip install pyspark
      ```
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery.
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
+  * Provide **BigQuery Data Editor and BigQuery Admin role** to the Dataset and table created.
   
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
 
@@ -17,8 +19,14 @@
 
 ## Spark Connector to sync MongoDB collection to the GCP Bigquery Table:
    * This python application is used to sync the MongoDB Atlas database collections to the GCP Bigquery table in the desire GCP buckest storage.
-   * Loads the data from MongoDB collection "sample_analytics.Customer" with spark connector 
+   * Loads the data from MongoDB collection "sample_analytics.Customer" with spark connector using the python code "mongotobqsync.py"
    * Write the loaded data to the destination GCP BigQuery table that we created.
+
+     **Insert the document to mongodb collection**
+     ![mongo_insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e38df119-5c0c-4824-8fea-96ec03aa0771)
+
+     **BigQuery Table after Syncing the data from Mongodb**
+     ![biqTable](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0cc0ca36-9f84-4c20-a4ea-09c30e891a42)
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.
