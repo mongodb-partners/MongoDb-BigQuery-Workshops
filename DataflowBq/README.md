@@ -4,13 +4,18 @@
   * If incase to define the message structure, click the **"Use a schema"** checkbox.
   * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
   
-    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f86a5edc-336a-40e0-a9cd-1d57ea9c2c60)
+    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
 
-- **Table Creation:**
+- **Table Creation:** 
   * Create a table for the schema defined in Bigquery.
+
+    **BigQuery Table schema update**
+    ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0999a4a8-9968-4293-8be5-4a4ad029f625)
+    
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
-  
-    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
+
+    **Dataset Creation**
+    ![DataSetcreation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/42ed0a45-4021-4f9a-804c-ef1ed48357b6)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
@@ -23,7 +28,7 @@
   * Check the status once the job is created
   * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   
-    ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
+    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dc4e6083-3970-47c0-9dc1-6648e0fef043)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
@@ -34,12 +39,12 @@
   
      **Publish message :** 
       
-       ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
+       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6a4287c8-dabf-41e7-bbc0-8620b16204fd)
 
      **Job Status :**
 
-       ![Dataflow Job Graph](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/96880d32-6f05-408f-b736-8796f8c1dddf)
+       ![Dataflow Job Graph](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/34870f31-aa80-4fab-ac2a-e2d22dd20fc2)
   
      **BigQuery Table :**
     
-       ![BigQuery Destination Table](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/0365fdc3-3dc1-4830-82e5-9b88d91de613)
+       ![BigQuery Destination Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d531d743-6681-4b86-a355-1129f0d546ed)
