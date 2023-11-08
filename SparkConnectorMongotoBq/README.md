@@ -7,9 +7,11 @@
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery.
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
-  * Provide **BigQuery Data Editor and BigQuery Admin role** to the Dataset and table created.
+  * Provide **Bigquery Job user** role to the Service account, as mentioned [here](https://cloud.google.com/bigquery/docs/jobs-overview)
   
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
+- **Create GCP Service Account:**
+  * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
@@ -18,7 +20,7 @@
     ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
 
 ## Spark Connector to sync MongoDB collection to the GCP Bigquery Table:
-   * This python application is used to sync the MongoDB Atlas database collections to the GCP Bigquery table in the desire GCP buckest storage.
+   * This python application is used to sync the MongoDB Atlas database collections to the GCP Bigquery table in the desire GCP bucket storage.
    * Loads the data from MongoDB collection "sample_analytics.Customer" with spark connector using the python code "mongotobqsync.py"
    * Write the loaded data to the destination GCP BigQuery table that we created.
 
