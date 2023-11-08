@@ -9,7 +9,7 @@
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
   * Provide **Bigquery Job user** role to the Service account, as mentioned [here](https://cloud.google.com/bigquery/docs/jobs-overview)
   
-    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
+    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4c24ebec-bd06-4d3b-908f-fcd40069840b)
 - **Create GCP Service Account:**
   * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create)
 
