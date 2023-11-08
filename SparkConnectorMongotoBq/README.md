@@ -1,3 +1,6 @@
+## Overview
+  This application is to demostrate how the MongoDb collection data can be synced with the GCP BigQuery table using Spark connector. Implementaion is done with the python using "PYSPARK".
+   
 ## Pre-requisite
 - **Install pyspark :**
   * To use pyspark in the code need to install pyspark with the below command
@@ -5,17 +8,17 @@
      pip install pyspark
      ```
 - **Table Creation:**
-  * Create a table for the schema defined in Bigquery.
-  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
+  * Create the GCP pub/Sub topic without defining the schema
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
   * Provide **Bigquery Job user** role to the Service account, as mentioned [here](https://cloud.google.com/bigquery/docs/jobs-overview)
   
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4c24ebec-bd06-4d3b-908f-fcd40069840b)
 - **Create GCP Service Account:**
-  * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create)
+  * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create#creating)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
-  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
+  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets#create_a_new_bucket)
   
     ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4078cd12-3f48-4308-b507-dff2cabcfea1)
 
