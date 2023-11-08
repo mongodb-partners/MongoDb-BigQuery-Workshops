@@ -1,15 +1,17 @@
+## Overview
+   This describes the detailed steps to configure the PUB/SUB Topic with the defined schema which is used to publish the message with defined schama and Pub/Subscription will write the messages to the BigQuery table that are published by the topic by enabling delivery mode as **write to BigQuery** in the subscription.
+   
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
+  * Create the GCP pub/Sub topic by defining the schema (example schema is provided for the reference in the step **Create PUB/SUB Schema**)
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
 
     ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01f6a218-c54c-4eb5-8b81-c103aa35fcb1)
 
 - **Create PUB/SUB Schema**:
   * Create the schema to the topic as per the requirement
   * Create the schema with **"Schema Type : AVRO"**
-  * Detailed steps for Schema definition can be found [here](https://cloud.google.com/pubsub/docs/create-schemas)
+  * Detailed steps for Schema definition can be found [here](https://cloud.google.com/pubsub/docs/create-schemas#create-schema)
   * Sample schema for the MongoDB sample collection **"sample_analytics.customers"**
 ``` bash
 {
@@ -46,20 +48,20 @@
 
 - **Create DataSet**:
   * In the Big Query screen create the Dataset as per the requirement to the Selected Project.
-  * Detailed steps for dataset can be found [here](https://cloud.google.com/bigquery/docs/datasets)
+  * Detailed steps for dataset can be found [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
 
     ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4f4e8bb7-a525-42f5-b0bc-61269f94f2a1)
 
 - **Table Creation**:
   * Create a table for the schema defined in Bigquery.
-  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
+  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
 
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/c83e8728-1462-42f6-bfe2-b915763003ac)
 
 - **Create a Pub/Sub Subscription:**
-  * Create the GCP pub/Sub Subscription
-  * Configure other settings, such as acknowledgment mode and **delivery Type : "Write to Bigquery"**, as per your requirements. 
-  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription)
+  * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: write to BigQuery**
+  * Once created under Message tab give **PULL** to get the messages that are process by the subscription
+  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
 
     ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8c34544a-1da9-4bad-8f18-49322e2ef1c9)
 
