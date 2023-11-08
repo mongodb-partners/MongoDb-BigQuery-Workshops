@@ -1,22 +1,27 @@
+## Overview
+   A DataFlow job template is created with **"Job Dataflow Template : PubSub Subscription to BigQuery"** in GCP to keep track of the status and details of PUB/SUB topic and the PUB/SUB subscription to which the dataflow job is been created.
+   
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
+  * Create the GCP pub/Sub topic can be created either by defining the schema or without schema
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
   
     ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
 
+- **Create DataSet**:
+  * In the Big Query screen create the Dataset as per the requirement to the Selected Project.
+  * Detailed steps for dataset can be found [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
+
+    ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4f4e8bb7-a525-42f5-b0bc-61269f94f2a1)
 - **Table Creation:** 
   * Create a table for the schema defined in Bigquery.
+  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
 
     **BigQuery Table schema update**
     ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0999a4a8-9968-4293-8be5-4a4ad029f625)
     
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
-
-    **Dataset Creation**
-    ![DataSetcreation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/42ed0a45-4021-4f9a-804c-ef1ed48357b6)
-
+    
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
   * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
