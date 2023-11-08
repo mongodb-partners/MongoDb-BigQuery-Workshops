@@ -7,7 +7,7 @@
   * Create a table for the schema defined in Bigquery.
   * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
   
-    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
+    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/badbf580-f3d8-45a6-9c3e-c5eebf41235c)
 
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
@@ -58,17 +58,17 @@
      - Once connector is created insert the document to the "collection" that we have configured in the Source connector
 
      **Screenshot 1:**
-       ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc9708b1-b5e9-4ce6-b036-f0fd0c147f93)
+       ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/211f1f77-9e12-4156-8201-423c62fd86a3)
 
      **Screenshot 2:**
-       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/2f1d4174-a386-488c-939c-761f63ee6755)
+       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cca69772-832a-4d4c-8cc8-1dd3d9e55843)
 
      - Follow the steps to create the **"Google BigQuery Sink"**
      - Once Sink connector is created inserted data will get reflected in the Big query table
 
      **Screenshot 1:**
-       ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ab96dc11-78e3-4942-a1ce-96e2fdd7ed58)
+       ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e31574bc-1e0e-4178-9da5-5274edb92334)
 
      **Screenshot 2:**
-       ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/58682ba4-9364-470a-96ca-5e0e1278ce97)
+       ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8ff33c4b-50da-4f18-9524-2590c59a73fa)
      
