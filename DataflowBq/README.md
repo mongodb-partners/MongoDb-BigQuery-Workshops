@@ -20,8 +20,6 @@
     **BigQuery Table schema update**
     ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0999a4a8-9968-4293-8be5-4a4ad029f625)
     
-  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
-    
 - **Create GCP Bucket:**
   * Enable it to Multi-region and set public access prevention on the bucket.
   * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
