@@ -52,7 +52,7 @@
   * Detailed steps for creating the Google BigQuery Sink connector can be found [here](https://docs.confluent.io/cloud/current/connectors/cc-gcp-bigquery-sink.html)
  
    ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cc2f1e06-cc50-4186-add7-dc9acbbd02fc)
-## MongoDB to BigQuery with kafka confluent configuration**:
+## MongoDB to BigQuery with kafka confluent configuration:
   * Create the Cluster with Two connector in the confluent account
      - Follow the steps to create the **"MongoDb Atlas Source connector"**
      - Once connector is created insert the document to the "collection" that we have configured in the Source connector
