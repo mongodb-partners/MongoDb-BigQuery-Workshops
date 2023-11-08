@@ -17,7 +17,7 @@
   * Enable it to Multi-region and set public access prevention on the bucket.
   * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
   
-    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
+    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4078cd12-3f48-4308-b507-dff2cabcfea1)
 
 ## Spark Connector to sync MongoDB collection to the GCP Bigquery Table:
    * This python application is used to sync the MongoDB Atlas database collections to the GCP Bigquery table in the desire GCP bucket storage.
