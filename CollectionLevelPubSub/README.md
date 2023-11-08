@@ -29,7 +29,7 @@
   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6b485882-f3a5-49e6-8bbf-d6022ba12bf4)
 
   **PUB/SUB Topic Screenshot**
-  ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/828c4624-f769-4d45-bd8e-643b5992a1bd)
+  ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cf22d5b7-2e92-4df1-b52a-6c787712be35)
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.
