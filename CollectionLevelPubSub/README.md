@@ -1,15 +1,16 @@
+## Overview
+   This application is to demostrate how the MongoDb collection level change stream operations are been handled with GCP PUB/SUB topic and subscription using python code.
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
-
+  * Create the GCP pub/Sub topic without defining the schema
+  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+  
     ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/633def66-2df5-42b3-9341-0c791b39ad07)
 
 - **Create a Pub/Sub Subscription:**
-  * Create the GCP pub/Sub Subscription
-  * Configure other settings, such as acknowledgment mode and **Delivery type: Pull**, as per your requirements.
-  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription)
+  * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull**
+  * Once created under Message tab give **PULL** to get the messages that are process by the subscription
+  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
 
     **Screenshot 1 :**
 
