@@ -9,29 +9,30 @@
     ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
 
 - **Create DataSet**:
-  * In the Big Query screen create the Dataset as per the requirement to the Selected Project.
-  * Detailed steps for dataset can be found [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
+  * Create the Dataset in the Bigquery as described [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
 
-    ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4f4e8bb7-a525-42f5-b0bc-61269f94f2a1)
+    ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f179ad2a-09ed-4ea2-b45d-61a6c1e9b812)
+
 - **Table Creation:** 
-  * Create a table for the schema defined in Bigquery.
-  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
+  * Create a table for the schema defined in Bigqueryas described [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
 
-    **BigQuery Table schema update**
-    ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0999a4a8-9968-4293-8be5-4a4ad029f625)
+    **BigQuery Table**
+    ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6d3c3428-22c0-41c7-823f-e251f55482a5)
+
+    **BigQuery Schema**
+    ![schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/17bcc428-09b6-43fb-8573-ba4aecc358b1)
+
     
 - **Create GCP Bucket:**
-  * Enable it to Multi-region and set public access prevention on the bucket.
-  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
+  * Create bucket by enabling it to Multi-region and set public access prevention on the bucket as described [here](https://cloud.google.com/storage/docs/creating-buckets)
   
-    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
+    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/43cc1104-a868-4237-8c29-ed72e4201768)
   
 - **Create Dataflow Job Template:**
-  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
+  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"** as described [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   * Check the status once the job is created
-  * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   
-    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dc4e6083-3970-47c0-9dc1-6648e0fef043)
+    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e28050ed-8126-4ab6-bbeb-b9ce36f1fcb5)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
@@ -42,7 +43,7 @@
   
      **Publish message :** 
       
-       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6a4287c8-dabf-41e7-bbc0-8620b16204fd)
+       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/879ca729-4133-414a-a671-1dec637d7472)
 
      **Job Status :**
 
@@ -50,4 +51,4 @@
   
      **BigQuery Table :**
     
-       ![BigQuery Destination Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d531d743-6681-4b86-a355-1129f0d546ed)
+       ![BigQuery Destination Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dea69155-2ac6-4e45-9aa4-6fe77104edc5)
