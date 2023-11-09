@@ -5,18 +5,18 @@
 - **Create a Pub/Sub Topic:**
   * Create the GCP pub/Sub topic without defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
   
-    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/633def66-2df5-42b3-9341-0c791b39ad07)
+    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/80958e4f-e677-4976-a359-cedf101e6109)
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull**, subscription creation as described [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
 
     **Screenshot 1 :**
 
-    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ea5e8933-9085-41da-8c8d-37540a4ae5b8)
+    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/c5c1ef20-8718-404c-ac2b-b8beca99e208)
 
     **Screenshot 2 :**
   
-    ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/855e0a3f-1468-4381-a554-5f139f26e1eb)
+    ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/20f4a3e9-5dd0-4b7d-8cf4-69e207c0dd1f)
 
 ## Listening to collection Level changes
 - A collection-level change stream in MongoDB allows you to monitor and capture changes occurring in a specific collection. You can use this feature to track changes to documents within that collection.
@@ -25,13 +25,13 @@
 - Format the message that has to be published to the PUB/SUB, which we created in the above steps in GCP.
 
   **Mongo Insert Screenshot**
-  ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6b485882-f3a5-49e6-8bbf-d6022ba12bf4)
+  ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d8fd8be4-006a-4fa7-99d5-8352a5998027)
 
   **PUB/SUB Topic Screenshot**
 
   - Once message published to the GCP Topic,we can **PULL** message under Message Tab in subscription.
     
-  ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cf22d5b7-2e92-4df1-b52a-6c787712be35)
+  ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8a2ba2e6-e090-494e-892a-8ff1a9ccaac6)
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.
