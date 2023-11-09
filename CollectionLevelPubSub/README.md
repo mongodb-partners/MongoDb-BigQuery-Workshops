@@ -9,7 +9,6 @@
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull**, subscription creation as described [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
-  * Once created under Message tab give **PULL** to get the messages that are process by the subscription 
 
     **Screenshot 1 :**
 
@@ -29,6 +28,9 @@
   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6b485882-f3a5-49e6-8bbf-d6022ba12bf4)
 
   **PUB/SUB Topic Screenshot**
+
+  - Once message published to the GCP Topic,we can **PULL** message under Message Tab in subscription.
+    
   ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/cf22d5b7-2e92-4df1-b52a-6c787712be35)
 
 ## Steps to Run Application
