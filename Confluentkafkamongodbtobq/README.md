@@ -22,7 +22,7 @@
   * Click on the Add Connector button select **"MongoDb Atlas Source"**
     - In "Topic selection" e.g : "Customer_kafka_test"
     - In "Kafka credentials" Use the exsisting key or Generate the API keys
-    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_analytics.Customer"** from the sample data provided by the MongoDB Atlas.)
+    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_analytics.Customer"** that we created in the using common readme file.)
     - In "Configuration" 
         * Output Kafka record value format : **"AVRO"**
         * Advanced Configuration
