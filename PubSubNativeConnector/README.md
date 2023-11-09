@@ -1,5 +1,5 @@
 ## Overview
-   This describes the detailed steps to configure the PUB/SUB Topic with the defined schema which is used to publish the message with defined schama and Pub/Subscription will write the messages to the BigQuery table that are published by the topic by enabling delivery mode as **write to BigQuery** in the subscription.
+   This pattern demonstrate sinking messages with defined schema from GCP PUB/SUB topic to GCP Bigquery table using native connector.
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
