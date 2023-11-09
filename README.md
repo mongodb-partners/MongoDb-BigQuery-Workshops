@@ -16,7 +16,7 @@ In this project, we will initially explore some of the projects.
 - Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
 
   **Note:**
-    For the scope of this workshop, Cretae the collection Customer **"sample_analytics.Customer"** with the below document structure
+    For the scope of this workshop, create the collection Customer **"sample_analytics.Customer"** with the below document structure
     ```
      {
        "_id": "1",
