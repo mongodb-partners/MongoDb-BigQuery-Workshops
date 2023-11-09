@@ -1,5 +1,5 @@
 ## Overview
-  This application is to demostrate how the MongoDb collection data can be synced with the GCP BigQuery table using Spark connector. Implementaion is done with the python using "PYSPARK".
+  This pattern demostrate the dataflow from MongoDB to the GCP bigquery table using **Spark connector**. 
    
 ## Pre-requisite
 - **Install pyspark :**
