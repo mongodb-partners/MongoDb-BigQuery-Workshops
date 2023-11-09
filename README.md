@@ -12,7 +12,16 @@
 - Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
 
   **Note:**
-    For the scope of this workshop, we will be using this sample data provided by Atlas **"sample_analytics.customers"**
+    For the scope of this workshop, Cretae the collection Customer **"sample_analytics.Customer"** with the below document structure
+    ```
+     {
+       "_id": "1",
+       "username": "CSCollectionleveltoGCPpubsub",
+       "name": "Derek Curtis",
+       "address": "565 Hodge Motorway Suite 101 Wendyberg, FL 57099",
+       "email": "qgibson@hotmail.com"
+     }
+    ```
 
 ## Create GCP Account
 - **Create an Account**:
