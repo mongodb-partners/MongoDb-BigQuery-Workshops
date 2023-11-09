@@ -26,7 +26,7 @@
 - The Pub/Sub topic then sends the change stream document to all subscribed clients in real-time.
 - Format the message that has to be published to the PUB/SUB, which we created in the above steps in GCP.
 
-  **Mongoinsert Screenshot**
+  **Mongo Insert Screenshot**
   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6b485882-f3a5-49e6-8bbf-d6022ba12bf4)
 
   **PUB/SUB Topic Screenshot**
