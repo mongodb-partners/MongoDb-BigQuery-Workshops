@@ -1,6 +1,5 @@
 ## Overview
-   As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker.
-In this project, we will initially explore some of the projects.
+   As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker. This repo holds the code samples for the integration patterns.This would enable the customers to try it out themselves. This will also enable SAs to work through some of the patterns with customers already.
 
 # Pre-requisite
 
