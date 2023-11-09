@@ -1,5 +1,5 @@
 ## Overview
-   A DataFlow job template is created with **"Job Dataflow Template : PubSub Subscription to BigQuery"** in GCP to keep track of the status and details of PUB/SUB topic and the PUB/SUB subscription to which the dataflow job is been created.
+   This Pattern demonstrate the dataflow from MongoDB to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
