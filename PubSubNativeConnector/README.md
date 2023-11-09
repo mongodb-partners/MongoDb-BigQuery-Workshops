@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate sinking messages with defined schema from GCP PUB/SUB topic to GCP Bigquery table using native connector.
+   This pattern demonstrate consuming messages with defined schema from GCP PUB/SUB topic to GCP Bigquery table using native connector.
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
