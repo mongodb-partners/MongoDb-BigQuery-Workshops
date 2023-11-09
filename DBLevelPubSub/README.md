@@ -1,30 +1,33 @@
+## Overview
+   This Pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
+   
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
+  * Create the GCP pub/Sub topic without defining the schema as discribed [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
 
-    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/506f1cb3-835f-4023-b258-2670b91ff409)
-
+    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a90489e7-5713-4627-ae75-5b8226707aa7)
+    
 - **Create a Pub/Sub Subscription:**
-  * Create the GCP pub/Sub Subscription
-  * Configure other settings, such as acknowledgment mode and **Delivery type: PULL**, as per your requirements.
-  * Detailed steps for Subscription creation can be found [here](https://cloud.google.com/pubsub/docs/create-subscription)
+  * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull** as described [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
 
     **Screenshot 1 :**
   
-    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d45a5719-58af-4a29-ad71-14bc1d4aa9fa)
+    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8695e215-6a82-49d0-ae50-85819ba27762)
 
     **Screenshot 2 :**
   
-    ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/5165a2ba-306f-46de-994e-5a30fa41860b)
+    ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9d9c44a9-f4bd-4c89-b655-7902802fbf3d)
 
 ## Listening Database Level Change Stream changes
 - A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. You can use this feature to track changes to documents within any collection in the database.
 
 - Format the message that must be published to the PUB/SUB which we created with the above steps in GCP.
-  
-  ![Pub/Sub Message Format](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/7304e18c-661a-414f-90b8-3d793b1855b0)
+
+  **Mongoinsert Screenshot**
+  ![Mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/5ee2826e-f8a9-4eeb-b3f3-bb1dbcd3fa85)
+
+  **PUB/SUB Topic Screenshot**
+  ![Pub/Sub Message Format](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9d7b55f5-f143-4e10-8ac1-6609809bf6d9)
 
 ## Steps to Run Application
 1. Follow the common readme file to install all the required software.

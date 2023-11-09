@@ -1,3 +1,6 @@
+## Overview
+   As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker. This repo holds the code samples for the integration patterns.This would enable the customers to try it out themselves. This will also enable SAs to work through some of the patterns with customers already.
+
 # Pre-requisite
 
 ## Create MongoDB Cluster with Database and Collections
@@ -12,7 +15,16 @@
 - Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
 
   **Note:**
-    For the scope of this workshop, we will be using this sample data provided by Atlas **"sample_analytics.customers"**
+    For the scope of this workshop, create the collection Customer **"sample_analytics.Customer"** with the below document structure
+    ```
+     {
+       "_id": "1",
+       "username": "CSCollectionleveltoGCPpubsub",
+       "name": "Derek Curtis",
+       "address": "565 Hodge Motorway Suite 101 Wendyberg, FL 57099",
+       "email": "qgibson@hotmail.com"
+     }
+    ```
 
 ## Create GCP Account
 - **Create an Account**:

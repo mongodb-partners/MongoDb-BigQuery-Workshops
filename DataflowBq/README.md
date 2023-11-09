@@ -1,29 +1,37 @@
+## Overview
+   This Pattern demonstrate the dataflow from MongoDB to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
+   
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic
-  * If incase to define the message structure, click the **"Use a schema"** checkbox.
-  * Detailed steps for topic creation can be found [here](https://cloud.google.com/pubsub/docs/create-topic)
+  * Create the GCP pub/Sub topic can be created either by defining the schema or without schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
   
-    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f86a5edc-336a-40e0-a9cd-1d57ea9c2c60)
+    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
 
-- **Table Creation:**
-  * Create a table for the schema defined in Bigquery.
-  * Detailed steps for GCP table creation can be found [here](https://cloud.google.com/bigquery/docs/tables)
-  
-    ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/24d38411-a9ad-47e6-808c-237645f94fbd)
+- **Create DataSet**:
+  * Create the Dataset in the Bigquery as described [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
 
+    ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f179ad2a-09ed-4ea2-b45d-61a6c1e9b812)
+
+- **Table Creation:** 
+  * Create a table for the schema defined in Bigquery as described [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
+
+    **BigQuery Table**
+    ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6d3c3428-22c0-41c7-823f-e251f55482a5)
+
+    **BigQuery Schema**
+    ![schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/17bcc428-09b6-43fb-8573-ba4aecc358b1)
+
+    
 - **Create GCP Bucket:**
-  * Enable it to Multi-region and set public access prevention on the bucket.
-  * Detailed steps for GCP Bucket creation can be found [here](https://cloud.google.com/storage/docs/creating-buckets)
+  * Create bucket by enabling it to Multi-region and set public access prevention on the bucket as described [here](https://cloud.google.com/storage/docs/creating-buckets)
   
-    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ac0b96df-e37e-4b61-bcb4-86206f294a11)
+    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/43cc1104-a868-4237-8c29-ed72e4201768)
   
 - **Create Dataflow Job Template:**
-  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"**
+  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"** as described [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   * Check the status once the job is created
-  * Detailed steps to create Dataflow Job template can be found [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   
-    ![Create Dataflow Job Template](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/57aa94d1-f40a-40a3-8586-f0df25df965d)
+    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e28050ed-8126-4ab6-bbeb-b9ce36f1fcb5)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created with the **"Use a schema"**
@@ -34,12 +42,12 @@
   
      **Publish message :** 
       
-       ![Dataflow Template for PUB/Sub to BQ](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/4bcc49a0-525c-4280-b0c7-b4b61066242e)
+       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/879ca729-4133-414a-a671-1dec637d7472)
 
      **Job Status :**
 
-       ![Dataflow Job Graph](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/96880d32-6f05-408f-b736-8796f8c1dddf)
+       ![Dataflow Job Graph](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/34870f31-aa80-4fab-ac2a-e2d22dd20fc2)
   
      **BigQuery Table :**
     
-       ![BigQuery Destination Table](https://github.com/TSowbaranika/BQGCPAtlas/assets/109083730/0365fdc3-3dc1-4830-82e5-9b88d91de613)
+       ![BigQuery Destination Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dea69155-2ac6-4e45-9aa4-6fe77104edc5)
