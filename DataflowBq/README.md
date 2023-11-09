@@ -13,7 +13,7 @@
     ![Create DataSet](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f179ad2a-09ed-4ea2-b45d-61a6c1e9b812)
 
 - **Table Creation:** 
-  * Create a table for the schema defined in Bigqueryas described [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
+  * Create a table for the schema defined in Bigquery as described [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
 
     **BigQuery Table**
     ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6d3c3428-22c0-41c7-823f-e251f55482a5)
