@@ -1,5 +1,5 @@
 ## Overview
-   This application is to demostrate how the MongoDb Database level change stream operations are been handled with GCP PUB/SUB topic and subscription using python code.
+   This Pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
    
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
