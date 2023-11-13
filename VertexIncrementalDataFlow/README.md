@@ -86,6 +86,14 @@
 
 - **Import the model to Vertex AI**
   * Refer [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#5) to import the model registry exported above.
+
+    ![import](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ec86ace4-2379-4461-83f5-7cf4505e6f18)
+ 
+- **Deploy and test DataModel**
+  * Refer [link] (https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#6). Create the Endpoint to the deployed model.
+    
+    ![deploy](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/de2a9183-db08-455e-a9c2-8db0f955f11c)
+
     
     
 
