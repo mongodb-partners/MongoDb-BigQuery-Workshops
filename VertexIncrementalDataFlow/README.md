@@ -94,6 +94,33 @@
     
     ![deploy](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/de2a9183-db08-455e-a9c2-8db0f955f11c)
 
+
+## Real time integration of Mongodb with vertex AI
+   Real time incremental changes to Bigquery table data, our model also has to be retrained on an increamental basis. BigML model provides an option 'warm_start' from which we can train our existing model with new data that are update from the MongoDb change stream.
+   
+   Have used "KMean" Model to train the data, for details click [here](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-kmeans) 
+
+   Handle all the MongoDb change straem operations using Native PUB/SUB connectors with Subscription delivery type as "Write to BigQuery"
+
+   Create the Scheduled Query in the Bigquery table, this will train and retain the real time data sync with MongoDb
+
+   ![scheduleQuery](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f69ba58d-4359-43f5-afb6-94c59679f06c)
+
+   ![runhistory](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f080aaa1-b095-4df2-9ecd-e8d5ad35fdf3)
+
+
+   Deploy and test predicates
+
+   ![testpredicates](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/025c0b85-8d6b-4c74-ba57-01f5886adfcb)
+
+
+
+   
+
+   
+
+   
+
     
     
 
