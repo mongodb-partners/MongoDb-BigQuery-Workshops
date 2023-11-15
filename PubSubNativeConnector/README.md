@@ -56,10 +56,10 @@
   * In the Bigquery Tab you could see the reflection of the data that we published to the topic we created.
 
     **PublishMessage**
-    ![PublishMessage](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4a4b1195-586a-4344-961b-c635af1ea3bd)
+    <img width="1726" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dedcded3-bef1-4435-9f91-5fe03f54716a">
 
     **BigQuery Table**
-    ![BigQuery Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/48adfb10-81ac-44cc-9268-53befb998773)
+    <img width="1726" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/873fff48-5b58-4cb6-b44b-9cc7f7a83eb4">
 
 
 
