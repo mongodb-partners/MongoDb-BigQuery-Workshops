@@ -1,5 +1,5 @@
 ## Overview
-   This Pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
+   This pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
    
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
