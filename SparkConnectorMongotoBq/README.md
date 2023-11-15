@@ -29,7 +29,7 @@
      ![biqTable](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a4b044e6-157b-4c2a-bc67-4a0eecda1246)
 
 ## Steps to Run Application
-1. Follow the common readme file to install all the required software.
+1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required software.
 2. Update the required configuration details in the .env file.
 3. Open the terminal in the respective project folder and run the command "python main.py".
 
