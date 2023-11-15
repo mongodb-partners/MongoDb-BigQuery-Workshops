@@ -25,10 +25,11 @@ class MongoToBQSync:
         conf.set("spark.executor.cores", "2")  # Cores per executor
 
         # Create a Spark session with the necessary configurations
+       
         self.spark = SparkSession.builder \
             .appName("MongoToBigQuerySync") \
             .master("local") \
-            .config("spark.jars", "/Users/sowbaranikat/Downloads/mongo-spark-connector_2.12-2.4.0.jar, /Users/sowbaranikat/Downloads/mongo-java-driver-3.12.14.jar") \
+            .config("spark.jars", f"{os.getenv('MONGO_SPARK_CONNECTOR_JAR_PATH')}, {os.getenv('MONGO_JAVA_DRIVER_JAR_PATH')}") \
             .config("spark.jars.packages", "com.google.cloud.spark:spark-bigquery-with-dependencies_2.12:0.34.0") \
             .config("spark.executor.extraJavaOptions", f"-Dcom.google.cloud.auth.service.account.json.keyfile={self.service_account_json}") \
             .config("spark.driver.extraJavaOptions", f"-Dcom.google.cloud.auth.service.account.json.keyfile={self.service_account_json}") \
