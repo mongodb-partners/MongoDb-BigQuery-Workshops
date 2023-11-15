@@ -3,9 +3,8 @@
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic can be created either by defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-  
-    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
+  * Create the GCP pub/Sub topic by defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a0d99599-c8f7-4a39-be7e-055a84078c81">
 
 - **Create DataSet**:
   * Create the Dataset in the Bigquery as described [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
