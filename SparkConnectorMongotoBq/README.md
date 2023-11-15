@@ -20,9 +20,8 @@
   
     ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/5d75d3b1-b46a-4cdd-a245-32c0d46ba600)
 
-## Spark Connector to sync MongoDB collection to the GCP Bigquery Table:
-   * This python application is used to sync the MongoDB Atlas database collections to the GCP Bigquery table in the desire GCP bucket storage.
-   * Loads the data from MongoDB collection "sample_analytics.Customer" with spark connector using the python code "mongotobqsync.py"
+## Spark Connector to sync data to GCP Bigquery Table from MongoDB collection :
+   * This python application reads the data from MongoDB collection "sample_analytics.Customer" using spark connector
    * Write the loaded data to the destination GCP BigQuery table that we created.
 
      **Mongodb collection data**
