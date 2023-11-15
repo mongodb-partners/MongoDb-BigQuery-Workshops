@@ -1,5 +1,5 @@
 ## Overview
-   This Pattern demonstrate the dataflow from GCP Pub/Sub to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
+   This pattern demonstrate the dataflow from GCP Pub/Sub to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
