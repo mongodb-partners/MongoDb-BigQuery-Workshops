@@ -3,7 +3,7 @@
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic can be created either by defining the schema or without schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+  * Create the GCP pub/Sub topic can be created either by defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
   
     ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
 
