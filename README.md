@@ -40,9 +40,13 @@ Before you start using this application, ensure that you have the necessary soft
 
 - **Poetry Setup**:
   ```bash
+  pip install poetry
   poetry init
+  brew install pyenv
+  poetry env use 3.11.4
+  poetry shell
   poetry install
-
+  ```
 
 ## 2. Python
 
