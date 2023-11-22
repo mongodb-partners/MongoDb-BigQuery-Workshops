@@ -61,13 +61,13 @@
    
    Python program watch the collection for changes, whenever changes detected, it will trigger the vertex AI endpoint to get online prediction.
    
-   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f00e91a7-c121-4249-80d2-66b97afba3b4)
+   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/03d71e6a-63a4-498f-b719-5b7a638950c9)
 
    **Updated Document with Vertex AI endpoint response:**
 
    Once we get prediction response, python program will update the same to the MongoDB collection.
    
-   ![updatemongo](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/bad8432a-3646-4082-83fa-3bc1817f5083)
+   ![updatemongo](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8c26db96-6e36-428b-840e-d0d4cb157270)
 
 ## Steps to Run Application
 1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required software.
