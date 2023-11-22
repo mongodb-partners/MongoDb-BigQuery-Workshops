@@ -4,7 +4,8 @@
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
   * Create the GCP pub/Sub topic by defining the schema (example schema is provided for the reference in the step **Create PUB/SUB Schema**) as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/68b58261-b609-467e-9542-91c8825cdd3b">
+    
+     ![topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/13ad7e14-e965-4351-b077-e3fd75117939)
   
 - **Create PUB/SUB Schema**:
   * Create the schema to the topic as described [here](https://cloud.google.com/pubsub/docs/create-schemas#create-schema)
