@@ -46,19 +46,17 @@ class VertexRealTimeIntegration:
 
         for event in change_stream:
             updated_transaction = event['fullDocument']
-            #json_input_string = f'{{"instances": [{{"age":{updated_transaction["age"]},"amouunt": {updated_transaction["amouunt"]},"category":"{updated_transaction["category"]}","ccNum":"{updated_transaction["ccNum"]}","gender":"{updated_transaction["gender"]}","id": {updated_transaction["id"]},"location":" {updated_transaction["location"]}","merchantName":"{updated_transaction["merchantName"]}","name":"{updated_transaction["name"]}","transDate":"{updated_transaction["transDate"]}"}]}}'
-
             updated_transaction["userId"] = updated_transaction["_id"]
+            
             del updated_transaction["_id"]
             del updated_transaction["email"]
-            json_input_string = {}
+            req_body = {}
             json_array= []
             json_array.append(updated_transaction)
-            json_input_string["instances"] = json_array
-            
-            #json_input_string = {"instances": [{"average_order_value":12.8,"no_of_orders":60,"session_count":8,"total_time_spend_by_user_in_msec": 2224770,"userId": 18.0}]}
-            
-            centroid_id = self.get_prediction_from_bq_model_user_transaction(json_input_string)
+            req_body["instances"] = json_array
+
+            # Method to call Deployed API in the vertexAI
+            centroid_id = self.get_prediction_from_bq_model_user_transaction(req_body)
 
             # Update MongoDB
             collection.update_one({"_id": updated_transaction["userId"]}, {"$set": {"centroid_id": centroid_id}})
@@ -121,7 +119,6 @@ class VertexRealTimeIntegration:
         return centroid_id
     
     def print_events_for_user_transaction(self):
-        # Placeholder implementation; replace with actual logic
         return lambda event: print(event)
 
 
