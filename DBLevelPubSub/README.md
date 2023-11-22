@@ -21,8 +21,6 @@
 ## Listening Database Level Change Stream changes
 - A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. You can use this feature to track changes to documents within any collection in the database.
 
-- Format the message that must be published to the PUB/SUB which we created with the above steps in GCP.
-
   **Mongoinsert Screenshot**
   ![Mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/5ee2826e-f8a9-4eeb-b3f3-bb1dbcd3fa85)
 
