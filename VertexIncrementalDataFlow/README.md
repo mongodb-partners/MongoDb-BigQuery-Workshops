@@ -32,8 +32,6 @@
   {dataset.modelname} OPTIONS(model_type='kmeans',kmeans_init_method = 'KMEANS++') AS (select * EXCEPT(CENTROID_ID) from dataset.tablename as u)
   ```
     ![Modelcreation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0ac3063d-0d0d-4162-87ce-9289415c32bd)
-
-    ![Evaluation]()
   
 - **Export DataModel**
   * Refer [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#4) to export the bigquery data model 
