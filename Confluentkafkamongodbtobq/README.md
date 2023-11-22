@@ -17,17 +17,17 @@
   * Click on the Add Connector button select **"MongoDb Atlas Source"**
     - In "Topic selection" e.g : "user_kafka_test"
     - In "Kafka credentials" Use the exsisting key or Generate the API keys
-    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_analytics.User"** that we created in the using common readme file.)
+    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_mflix.users"** that we created in the using common readme file.)
     - In "Configuration" 
         * Output Kafka record value format : **"AVRO"**
         * Advanced Configuration
             **"Publish full document only" : True**
     - In "sizing" just click continue 
-    - In "Review and launch" Give the connector name **e.g "MongoDbAtlasSourceConnector_user_kafka_topic"**
+    - In "Review and launch" Give the connector name **e.g "MongoDbAtlasSourceConnector_user_kafka_connector"**
   
   * Create the MongoDb atlas sources as described [here](https://docs.confluent.io/cloud/current/connectors/cc-mongo-db-source.html#quick-start)
  
-   ![MongoDb Atlas Source](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/fea7d885-049f-486e-92a9-ba5a055bc153)
+   ![MongoDb Atlas Source](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ba76bb74-f2c3-4e4c-9a8a-1d09456c6348)
 
 - **Create Service Api Key:**
   * Create the Service account in the GCP as described [here](https://developers.google.com/workspace/guides/create-credentials#api-key)
@@ -48,7 +48,7 @@
 
   * Create the Google BigQuery Sink connector as discribed [here](https://docs.confluent.io/cloud/current/connectors/cc-gcp-bigquery-sink.html#quick-start)
  
-   ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d754b2f7-c230-4379-aabd-07df54314478)
+   ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/c0088772-3e4a-49e4-879b-45d95e17bbc3)
 ## MongoDB to BigQuery dataflow with confluent kafka:
   * Create the cluster with two connector in the confluent account
      - Follow the steps to create the **"MongoDb Atlas Source connector"**
@@ -58,7 +58,7 @@
        ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9fa3e978-040e-4887-82d7-fb2d8fc06aae)
 
      **Screenshot 2:**
-       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/57156d3f-29e8-4c47-b207-ecf696bf6cf4)
+       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/1ba5007c-0c2d-4754-91b2-03db02dee8d9)
 
      - Follow the steps to create the **"Google BigQuery Sink"**
      - Once Sink connector is created inserted data will get reflected in the Big query table
