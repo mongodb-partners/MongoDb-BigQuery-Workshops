@@ -37,51 +37,48 @@
 
 ## Software to be Installed to Run the Application
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
+## 1. Python
 
-- **Poetry Setup**:
+Make sure you have Python installed on your system. If not, you can use the following command to install Python 3 using Homebrew (Mac users):
+```bash
+brew install python3
+```
+ **Poetry Setup**:
   ```bash
-  pip install poetry
+  pip3 install poetry
   poetry init
   brew install pyenv
-  poetry env use 3.11.4
+  poetry env use <replace with your python version>
   poetry shell
   poetry install
   ```
 
-## 2. Python
-
-Make sure you have Python installed on your system. If not, you can use the following command to install Python 3 using Homebrew (Mac users):
-
-```bash
-brew install python3
-```
-
-## 3. PyMongo
+## 2. PyMongo
 To work with MongoDB databases, you'll need to install the PyMongo library. Use the following command to install it:
 
 ```bash
-pip install pymongo
+pip3 install pymongo
 ```
 
-## 4. python-dotenv
+## 3. python-dotenv
 For managing environment variables and configuration settings in your Python application, you'll need the python-dotenv library. Install it with the following command:
 
 ```bash
-pip install python-dotenv
+pip3 install python-dotenv
 ```
 
-## 5. Google Cloud Pub/Sub
+## 4. Google Cloud Pub/Sub
 If your application interacts with Google Cloud Pub/Sub for messaging, install the google-cloud-pubsub library with the following command:
 
 ```bash
-pip install google-cloud-pubsub
+pip3 install google-cloud-pubsub
 ```
 
-## 6. Certifi
+## 5. Certifi
 To provide a certificate bundle for secure communication over HTTPS and SSL/TLS-encrypted protocols, install the certifi library:
 
 ```bash
-pip install certifi
+pip3 install certifi
 ```
 
 Ensure that you have Python and pip installed on your system before running these commands. These libraries and tools are essential for the proper functioning of the application.
