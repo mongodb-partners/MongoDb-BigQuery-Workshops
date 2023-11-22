@@ -27,7 +27,7 @@ class VertexRealTimeIntegration:
         pipeline = [
             {"$match": {"$or": [
                 {"operationType": "insert"},
-                {"operationType": "update", "updateDescription.updatedFields.amouunt": {"$exists": True}}
+                {"operationType": "update"}
             ]}}
         ]
         
@@ -46,10 +46,8 @@ class VertexRealTimeIntegration:
 
         for event in change_stream:
             updated_transaction = event['fullDocument']
-            updated_transaction["userId"] = updated_transaction["_id"]
-            
+            updated_transaction["userId"] = updated_transaction["_id"] 
             del updated_transaction["_id"]
-            del updated_transaction["email"]
             req_body = {}
             json_array= []
             json_array.append(updated_transaction)
