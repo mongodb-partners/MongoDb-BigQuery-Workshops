@@ -1,5 +1,5 @@
 ## Overview
-   This Pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
+   This pattern demostrates how the MongoDb database level changes has been monitored and published to GCP PUB/SUB topic using python code.
    
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
@@ -30,8 +30,8 @@
   ![Pub/Sub Message Format](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9d7b55f5-f143-4e10-8ac1-6609809bf6d9)
 
 ## Steps to Run Application
-1. Follow the common readme file to install all the required software.
-2. Update the required configuration details in the .env file.
+1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required software.
+2. Update the required configuration details in the [.env](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/DBLevelPubSub/.env) file.
 3. Open the terminal in the respective project folder and run the command:
 ```bash
 python main.py

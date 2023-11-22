@@ -4,9 +4,8 @@
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
   * Create the GCP pub/Sub topic by defining the schema (example schema is provided for the reference in the step **Create PUB/SUB Schema**) as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-
-    ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01f6a218-c54c-4eb5-8b81-c103aa35fcb1)
-
+    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/68b58261-b609-467e-9542-91c8825cdd3b">
+  
 - **Create PUB/SUB Schema**:
   * Create the schema to the topic as described [here](https://cloud.google.com/pubsub/docs/create-schemas#create-schema)
   * Create the schema with **"Schema Type : AVRO"**
@@ -48,8 +47,8 @@
 
 - **Create a Pub/Sub Subscription:**
   * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: write to BigQuery** as described [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
-
-    ![Create a Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8c34544a-1da9-4bad-8f18-49322e2ef1c9)
+ 
+    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/3755c4cc-41b0-4192-8d40-f44c46cab441">
 
 ## Exporting to BigQuery:
   * Publish the messages to the Topic created using the change stream as described [here](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/CollectionLevelPubSub/README.md)
@@ -57,10 +56,10 @@
   * In the Bigquery Tab you could see the reflection of the data that we published to the topic we created.
 
     **PublishMessage**
-    ![PublishMessage](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/4a4b1195-586a-4344-961b-c635af1ea3bd)
+    <img width="1726" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dedcded3-bef1-4435-9f91-5fe03f54716a">
 
     **BigQuery Table**
-    ![BigQuery Table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/48adfb10-81ac-44cc-9268-53befb998773)
+    <img width="1726" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/873fff48-5b58-4cb6-b44b-9cc7f7a83eb4">
 
 
 

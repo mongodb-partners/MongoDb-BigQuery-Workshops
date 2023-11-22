@@ -1,5 +1,5 @@
 ## Overview
-   This Pattern demonstrate the dataflow from MongoDB to the GCP bigquery table using the ConfluentKafka connector. We will create **MongoDb Atlas Source connector** and **Google BigQuery Sink connector**.
+   This pattern demonstrate the dataflow from MongoDB to the GCP bigquery table using the ConfluentKafka connector. We will create **MongoDb Atlas Source connector** and **Google BigQuery Sink connector**.
    
    - **MongoDb Atlas Source connector** will watch the mongodb source collection and publish message to the kafka topic.
    - **Google BigQuery Sink connector** will read the message published to the kafka topic and write the same to the GCP BigQuery table.
@@ -17,7 +17,7 @@
   * Click on the Add Connector button select **"MongoDb Atlas Source"**
     - In "Topic selection" e.g : "Customer_kafka_test"
     - In "Kafka credentials" Use the exsisting key or Generate the API keys
-    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_analytics.Customer"** that we created in the using common readme file.)
+    - In "Authentication" Give the Database hastname, Database, Collection Name that message has to be tracked in the topics.(Use the collection **"sample_analytics.User"** that we created in the using common readme file.)
     - In "Configuration" 
         * Output Kafka record value format : **"AVRO"**
         * Advanced Configuration

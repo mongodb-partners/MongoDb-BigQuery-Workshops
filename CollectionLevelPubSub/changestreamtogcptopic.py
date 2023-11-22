@@ -21,6 +21,7 @@ class CollectionChangeStreamToGCPTopic:
         self.dbname = os.getenv(MONGODB_DATABASE_NAME)
         self.collectionname = os.getenv(MONGODB_COLLECTION_NAME)
         self.gcptopicname = os.getenv(GCP_TOPIC_PATH)
+        self.service_account_json = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
 
    
     def to_perform_mongo_changestream_to_gcp_topics(self):

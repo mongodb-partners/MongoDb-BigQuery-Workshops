@@ -1,11 +1,14 @@
 ## Overview
-   This Pattern demonstrate the dataflow from MongoDB to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
+   This pattern demonstrate the dataflow from GCP Pub/Sub to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic can be created either by defining the schema or without schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-  
-    ![Create PUB/SUB Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/01ece0c5-62e7-4e7b-b927-b5db853f7f82)
+  * Create the GCP pub/Sub topic by defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a0d99599-c8f7-4a39-be7e-055a84078c81">
+
+      **BigQuery Schema**
+    ![schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/17bcc428-09b6-43fb-8573-ba4aecc358b1)
+
 
 - **Create DataSet**:
   * Create the Dataset in the Bigquery as described [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
@@ -18,9 +21,7 @@
     **BigQuery Table**
     ![table schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/6d3c3428-22c0-41c7-823f-e251f55482a5)
 
-    **BigQuery Schema**
-    ![schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/17bcc428-09b6-43fb-8573-ba4aecc358b1)
-
+  
     
 - **Create GCP Bucket:**
   * Create bucket by enabling it to Multi-region and set public access prevention on the bucket as described [here](https://cloud.google.com/storage/docs/creating-buckets)
