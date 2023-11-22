@@ -1,5 +1,22 @@
 ## Overview
-   This pattern demonstrate creation and deployment of Model on vertexAI and its real time integration with mongodb changestream.
+   This pattern demonstrate creation and deployment of Model on vertexAI and its real time integration with mongodb changestream. For the scope of this workshop we use **"K-means"** clustering for data segmentation.This model identifies users segments.
+   
+   **User Clustering**
+     
+   - Loyalty programs often categorize users into discrete segments based on the user’s purchase behavior and site engagement, such as Platinum / Gold / Silver / Bronze tiers.
+      
+   - In this example, we showcase how a ML driven clustering model can be applied to achieve user clustering using **Big query SQL workspace**.
+   
+   **K-means clustering**
+      
+   - K-means is an unsupervised learning technique identifying customer segments, so model training does not require labels nor split data for training or evaluation.
+      
+   **Cluster Users based on following attributes**
+   
+   - Session count
+   - Total time spent
+   - Average order value
+   - No of orders
 
 ## Pre-requisite
 - **Mongodb collection creation**:
@@ -14,56 +31,42 @@
   "email": "test_1@gmail.com"
   }
   ```
-- **API Bearer token creation for he endpoint:**
-  * Run following commands to get the Token, copy the token to the .env file
-  ```bash
-  gcloud auth application-default login
-  gcloud auth login
-  gcloud config set project PROJECT_ID
-  gcloud auth application-default set-quota-project PROJECT_ID
-  gcloud auth print-access-token
-  ```
+- **Bigquery Data sink**
+  * Follow the [pattern](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/DataflowBq/README.md) to sink the data from mongodb to bigquery.
+
+   ![bigquery table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0a888e1d-f164-4c46-8dee-4367abe29a41)
+    
+- **API Bearer token creation for the endpoint:**
+  * Create the bearer token as  described [here](https://developers.google.com/spectrum-access-system/guides/authorization-and-authentication) for accessing the endpoint and copy the token to the [.env](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/VertexAIRealTimeIntegration/.env) file
   
-- **DataModel Creation**
-  * Follow the [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#3) in creating the data model.
-  * Query we used to create the data model
+- **Datamodel creation**
+  * Follow the [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#3) to create the K-means model.
+  * sample query to create a model
   ``` bash
   CREATE OR REPLACE MODEL
-  {dataset.modelname} OPTIONS(model_type='kmeans',kmeans_init_method = 'KMEANS++') AS (select * EXCEPT(CENTROID_ID) from dataset.tablename as u)
+  {dataset.user_cluster} OPTIONS(model_type='kmeans',kmeans_init_method = 'KMEANS++') AS (select * EXCEPT(CENTROID_ID) from dataset.users as u)
   ```
     ![Modelcreation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0ac3063d-0d0d-4162-87ce-9289415c32bd)
   
-- **Export DataModel**
-  * Refer [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#4) to export the bigquery data model 
-
-    ![ExportImage](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/1ae05be2-8308-4d51-bb3c-a2bcc7547d80)
-
-- **Import the model to Vertex AI**
-  * Refer [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#5) to import the model registry.
-
-    ![import](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ec86ace4-2379-4461-83f5-7cf4505e6f18)
- 
-- **Deploy and test DataModel**
-  * Refer [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#6) to create the endpoint.
+- **Deploy model to endpoint**
+  * Follow the steps described [here](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#0) to deploy model to an endpoint.
     
     ![deploy](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dc8408d8-d70b-4a57-bb12-0665cabca97e)
 
 
 ## Real time integration of Mongodb with vertex AI
-   Created the Model using "KMean" for details click [here](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-kmeans) 
-
-   Handled the mongodb chnagestream will trigger the endpoint that we created and deployed in vertexAI and it will update the prediction to the mongodb document.
-
-   **Deploy and test predicates:**
-
-   ![testpredicates](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/b8e3593e-64d3-45fe-a7c9-c7b9d05d5a93)
-
-   **Insert to MongoDb:**
-
+   Whenever the real time changes made to the MongoDB collection changestream will be trigger the endpoint and get the online prediction and update the nearest centroid id to the MongoDb collection.
+  
+   **Insert/Update to MongoDb:**
+   
+   Python program watch the collection for changes, whenever changes detected, it will trigger the vertex AI endpoint to get online prediction.
+   
    ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/f00e91a7-c121-4249-80d2-66b97afba3b4)
 
    **Updated Document with Vertex AI endpoint response:**
 
+   Once we get prediction response, python program will update the same to the MongoDB collection.
+   
    ![updatemongo](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/bad8432a-3646-4082-83fa-3bc1817f5083)
 
 ## Steps to Run Application
