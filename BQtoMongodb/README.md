@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
+   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection via **"Dataflow Job"** using template **"BigQuery to MongoDb"**
    
 ## Pre-requisite
 - **Create DataSet**:
