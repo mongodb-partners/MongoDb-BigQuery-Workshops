@@ -22,7 +22,6 @@
 - A collection-level change stream in MongoDB allows you to monitor and capture changes occurring in a specific collection. You can use this feature to track changes to documents within that collection.
 - When a change occurs in the monitored collection, the change stream document is sent to the GCP Pub/Sub topic.
 - The Pub/Sub topic then sends the change stream document to all subscribed clients in real-time.
-- Format the message that has to be published to the PUB/SUB, which we created in the above steps in GCP.
 
   **Mongo Insert Screenshot**
   ![mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d8fd8be4-006a-4fa7-99d5-8352a5998027)
