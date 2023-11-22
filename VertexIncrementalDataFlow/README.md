@@ -16,13 +16,13 @@
   ```
 - **API Bearer token creation for he endpoint:**
   * Run following commands to get the Token, copy the token to the .env file
-    ```bash
-    gcloud auth application-default login
-    gcloud auth login
-    gcloud config set project PROJECT_ID
-    gcloud auth application-default set-quota-project PROJECT_ID
-    gcloud auth print-access-token
-    ```
+  ```bash
+  gcloud auth application-default login
+  gcloud auth login
+  gcloud config set project PROJECT_ID
+  gcloud auth application-default set-quota-project PROJECT_ID
+  gcloud auth print-access-token
+  ```
   
 - **DataModel Creation**
   * Follow the [link](https://codelabs.developers.google.com/codelabs/bqml-vertex-prediction#3) in creating the data model.
