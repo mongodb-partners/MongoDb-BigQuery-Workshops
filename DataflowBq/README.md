@@ -4,9 +4,12 @@
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
   * Create the GCP pub/Sub topic by defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-    <img width="1239" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a0d99599-c8f7-4a39-be7e-055a84078c81">
 
-      **BigQuery Schema**
+    ![topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/13ad7e14-e965-4351-b077-e3fd75117939)
+
+
+- **BigQuery Schema**
+  
     ![schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/17bcc428-09b6-43fb-8573-ba4aecc358b1)
 
 
