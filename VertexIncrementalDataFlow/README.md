@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate integration of mongodb change stream with real time vertex model traning and deployment.
+   This pattern demonstrate creation and deployment of Model on vertexAI and its real time integration with mongodb changestream.
 
 ## Pre-requisite
 - **Mongodb collection creation**:
