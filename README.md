@@ -9,11 +9,11 @@
 - **Log in**:
   * Log in to the MongoDB Atlas with existing account credentials.
 - **Create Cluster**:
-  * Create a Cluster and whitelist the required IPs to be accessed.
+  * Create a cluster as described [here](https://www.mongodb.com/docs/guides/atlas/cluster/) 
+  * whitelist the required IPs to be accessed as described [here](https://www.mongodb.com/docs/atlas/security/ip-access-list/).
 - **Create Database and Collection**:
   * Create the Database and the Collection in the Cluster.
-- Detailed steps for cluster creation can be found [here](https://www.mongodb.com/docs/guides/atlas/cluster/)
-
+    
   **Note:**
     For the scope of this workshop, create the collection Customer **"sample_analytics.Customer"** with the below document structure
     ```
