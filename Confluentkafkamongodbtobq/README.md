@@ -60,7 +60,7 @@
 
   - Sink connector takes data from Topic and delivers them to Bigquery
      
-   ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/82ee9543-83b8-4425-9f9a-e686de716bc5)
+   ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/ed98f4c6-d5d7-4c76-b6c2-271111deeefd)
 
-   ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8f91e33a-2f4e-478e-a2e5-c9480e900534)
+   ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/edf44109-f6b2-4f93-9cb7-25f3656698dc)
      
