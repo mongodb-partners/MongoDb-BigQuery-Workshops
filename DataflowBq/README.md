@@ -29,13 +29,13 @@
 - **Create GCP Bucket:**
   * Create bucket by enabling it to Multi-region and set public access prevention on the bucket as described [here](https://cloud.google.com/storage/docs/creating-buckets)
   
-    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/43cc1104-a868-4237-8c29-ed72e4201768)
+    ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/19b5b538-8cb2-49b8-86ec-e86b390d0e80)
   
 - **Create Dataflow Job Template:**
   * Create the dataflow streaming job using the template **"PubSub Subscription to BigQuery"** as described [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   * Check the status once the job is created
   
-    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e28050ed-8126-4ab6-bbeb-b9ce36f1fcb5)
+    ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/d2dc6f9c-08df-4127-866b-56983d552a08)
 
 ## Dataflow Template for Pub/Sub to BQ:
   * Use the Pub/Sub topic which we created to publish the message
@@ -43,11 +43,11 @@
   
      **Publish message :** 
       
-       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/879ca729-4133-414a-a671-1dec637d7472)
+       ![Dataflow Template for PUB/Sub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/b1b7e294-1f32-4902-aa89-823ff94a0b0f)
 
      **Job Status :**
 
-       ![Dataflow Job Graph](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/34870f31-aa80-4fab-ac2a-e2d22dd20fc2)
+       ![Dataflow Job Graph](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/13063088-f8f5-41cf-b7ba-6a679c9de71f)
   
      **BigQuery Table :**
     
