@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate the dataflow from GCP Pub/Sub to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
+   This pattern demonstrate the data streams from GCP Pub/Sub to the GCP bigquery table via **"Dataflow Job"** using template **"PubSub Subscription to BigQuery"**
    
 ## Pre-requisite
 - **Pub/Sub Topic creation**:
@@ -32,7 +32,7 @@
     ![Create GCP Bucket](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/43cc1104-a868-4237-8c29-ed72e4201768)
   
 - **Create Dataflow Job Template:**
-  * Create the dataflow job template to access big query tabel by selecting **"Dataflow Template : PubSub Subscription to BigQuery"** as described [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
+  * Create the dataflow streaming job using the template **"PubSub Subscription to BigQuery"** as described [here](https://cloud.google.com/dataflow/docs/guides/templates/provided/pubsub-to-bigquery)
   * Check the status once the job is created
   
     ![Create Dataflow Job Template](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/e28050ed-8126-4ab6-bbeb-b9ce36f1fcb5)
