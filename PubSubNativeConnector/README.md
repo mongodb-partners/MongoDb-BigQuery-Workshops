@@ -2,11 +2,7 @@
    This pattern demonstrate consuming messages with defined schema from GCP PUB/SUB topic to GCP Bigquery table using native connector.
    
 ## Pre-requisite
-- **Pub/Sub Topic creation**:
-  * Create the GCP pub/Sub topic by defining the schema (example schema is provided for the reference in the step **Create PUB/SUB Schema**) as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
-    
-     ![topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/13ad7e14-e965-4351-b077-e3fd75117939)
-  
+
 - **Create PUB/SUB Schema**:
   * Create the schema to the topic as described [here](https://cloud.google.com/pubsub/docs/create-schemas#create-schema)
   * Create the schema with **"Schema Type : AVRO"**
@@ -36,6 +32,12 @@
   
   ![Create PUB/SUB Schema](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/1ea4b3bb-2574-4278-b582-aef329b60578)
 
+- **Pub/Sub Topic creation**:
+  * Create the GCP pub/Sub topic by defining the schema created above as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+    
+     ![topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/13ad7e14-e965-4351-b077-e3fd75117939)
+  
+
 - **Create DataSet**:
   * Create the Dataset in Bigquery as described [here](https://cloud.google.com/bigquery/docs/datasets#create-dataset)
 
@@ -54,7 +56,7 @@
 ## Exporting to BigQuery:
   * Publish the messages to the Topic created using the change stream as described [here](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/CollectionLevelPubSub/README.md)
 
-  * In the Bigquery Tab you could see the reflection of the data that we published to the topic we created.
+  * In the Bigquery table we could see the data that we published to the topic.
 
     **PublishMessage**
     <img width="1726" alt="image" src="https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/dedcded3-bef1-4435-9f91-5fe03f54716a">
