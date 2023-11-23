@@ -50,22 +50,17 @@
  
    ![Google BigQuery Sink](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/c0088772-3e4a-49e4-879b-45d95e17bbc3)
 ## MongoDB to BigQuery dataflow with confluent kafka:
-  * Create the cluster with two connector in the confluent account
-     - Follow the steps to create the **"MongoDb Atlas Source connector"**
-     - Once connector is created insert the document to the "collection" that we have configured in the Source connector
+  - Once connector is created, insert the document to the "collection" that we have configured in the Source connector
 
-     **Screenshot 1:**
-       ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9fa3e978-040e-4887-82d7-fb2d8fc06aae)
+    ![Mongo insert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9fa3e978-040e-4887-82d7-fb2d8fc06aae)
 
-     **Screenshot 2:**
-       ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/1ba5007c-0c2d-4754-91b2-03db02dee8d9)
+  - Source connector that takes data from the mongodb source and feeds them into a topic
 
-     - Follow the steps to create the **"Google BigQuery Sink"**
-     - Once Sink connector is created inserted data will get reflected in the Big query table
+   ![Mongo insert1](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/1ba5007c-0c2d-4754-91b2-03db02dee8d9)
 
-     **Screenshot 1:**
-       ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/82ee9543-83b8-4425-9f9a-e686de716bc5)
+  - Sink connector takes data from Topic and delivers them to Bigquery
+     
+   ![Sink connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/82ee9543-83b8-4425-9f9a-e686de716bc5)
 
-     **Screenshot 2:**
-       ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8f91e33a-2f4e-478e-a2e5-c9480e900534)
+   ![Bq table](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8f91e33a-2f4e-478e-a2e5-c9480e900534)
      
