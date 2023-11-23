@@ -7,13 +7,14 @@
      ```bash
      pip install pyspark
      ```
+- **Create GCP Service Account:**
+  * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create#creating)
+     
 - **Table Creation:**
   * Create a table for the schema defined in Bigquery as described [here](https://cloud.google.com/bigquery/docs/tables#create_an_empty_table_with_a_schema_definition)
   * Provide **Bigquery Job user** role to the Service account, as mentioned [here](https://cloud.google.com/bigquery/docs/jobs-overview)
   
     ![Table Creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/3b692fff-b51a-4b22-906c-a415e383d300)
-- **Create GCP Service Account:**
-  * Detailed steps for the GCP Service Account Creation can be found [here](https://cloud.google.com/iam/docs/service-accounts-create#creating)
 
 - **Create GCP Bucket:**
   * Create GCP Bucket by enabling it to Multi-region and set public access prevention as described [here](https://cloud.google.com/storage/docs/creating-buckets#create_a_new_bucket)
