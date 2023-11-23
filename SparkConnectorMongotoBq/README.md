@@ -27,7 +27,7 @@
      ![mongo](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a6b61db4-0481-4d72-817f-bb590ae4e239)
 
      **BigQuery Table after Syncing the data from Mongodb**
-     ![biqTable](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a4b044e6-157b-4c2a-bc67-4a0eecda1246)
+     ![biqTable](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/bb8f19b7-0789-4da5-87c0-5007a2b53caa)
 
 ## Steps to Run Application
 1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required software.
