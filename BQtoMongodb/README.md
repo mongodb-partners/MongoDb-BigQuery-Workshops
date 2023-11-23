@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection using dataflow **"BigQuery to MongoDb"** template
+   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection by dataflow job using **"BigQuery to MongoDb"** template
    
 ## Pre-requisite
 - **Create DataSet**:
@@ -18,12 +18,13 @@
   
   ![dataflow](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/25f44dd2-8b92-444f-903e-9ddbb2a6d554)
 
-## Dataflow Template for BQ to Mongodb Collection:
-  * Use the **"Job Dataflow Template : BigQuery to MongoDb"**
+## Dataflow job for BQ to Mongodb Collection:
+  * Trigger a dataflow job using the **"BigQuery to MongoDb"** template
 
      **Job Status :**
 
        ![Dataflow Job Graph](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0a4a03c9-63d9-4f3d-a667-261515be8a26)
+  * Once the job is successful, data from BQ is sinked to MongoDB 
   
      **BigQuery Table :**
     
