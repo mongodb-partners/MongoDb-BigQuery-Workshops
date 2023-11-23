@@ -3,7 +3,7 @@
    
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
-  * Create the GCP pub/Sub topic without defining the schema as discribed [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+  * Create the GCP pub/Sub topic as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
 
     ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/a90489e7-5713-4627-ae75-5b8226707aa7)
     
@@ -19,7 +19,7 @@
     ![Pub/Sub Subscription](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/9d9c44a9-f4bd-4c89-b655-7902802fbf3d)
 
 ## Listening Database Level Change Stream changes
-- A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. You can use this feature to track changes to documents within any collection in the database.
+- A database-level changestream definition allows you to monitor and capture changes occurring at the database level in a MongoDB database. We can use this feature to track changes to documents within any collection in the database.
 
   **Mongoinsert Screenshot**
   ![Mongoinsert](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/5ee2826e-f8a9-4eeb-b3f3-bb1dbcd3fa85)
