@@ -1,5 +1,5 @@
 ## Overview
-   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection via **"Dataflow Job"** using template **"BigQuery to MongoDb"**
+   This pattern demonstrate the dataflow from GCP bigquery table to mongodb collection via **"Dataflow Job"** using **"BigQuery to MongoDb"** template
    
 ## Pre-requisite
 - **Create DataSet**:
