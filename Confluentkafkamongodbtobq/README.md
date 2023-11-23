@@ -34,7 +34,7 @@
 
 - **Create Google BigQuery Sink connector:**
   * Click on the Add Connector button select **"Google BigQuery Sink"**
-    - In "Topic selection" select the topic that we want to sink with **"Customer-kafka-test.sample_analytics.Customer"**
+    - In "Topic selection" select the topic that we want to sink with **"user-kafka-test.sample_mflix.users"**
     - In "Kafka credentials" Use the exsisting key or Generate the API keys
     - In "Authentication"
         * Upload the downloaded API key that we downloaded from the GCP profile
