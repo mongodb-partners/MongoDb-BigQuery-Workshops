@@ -1,6 +1,11 @@
 ## Overview
    As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker. This repo holds the code samples for the integration patterns.This would enable the customers to try it out themselves. This will also enable SAs to work through some of the patterns with customers already.
 
+   | Patterns | Description |
+|----------|-------------|
+| [MongoDB Collection level change stream to Pub Sub](www.google.com) | This pattern demonstrates how the MongoDB collection level changes have been monitored and published to GCP PUB/SUB topic using python code. |
+
+
 # Pre-requisite
 
 ## Create MongoDB Cluster with Database and Collections
