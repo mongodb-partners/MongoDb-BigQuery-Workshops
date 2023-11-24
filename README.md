@@ -1,9 +1,17 @@
 ## Overview
-   As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker. This repo holds the code samples for the integration patterns.This would enable the customers to try it out themselves. This will also enable SAs to work through some of the patterns with customers already.
+   As part of the Atlas GCP BigQuery workshop initiative, we have explored and demonstrated a number of integration patterns between Atlas and GCP data products. Specifically Atlas integration with BigQuery, VertexAI, Looker. This repo holds the code samples for the integration patterns.This would enable the customers to try it out themselves. 
 
-   | Patterns | Description |
+ | Patterns | Description |
 |----------|-------------|
-| [MongoDB Collection level change stream to Pub Sub](www.google.com) | This pattern demonstrates how the MongoDB collection level changes have been monitored and published to GCP PUB/SUB topic using python code. |
+| [MongoDB Collection level change stream to Pub Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/CollectionLevelPubSub/README.md) | This pattern demonstrates how the MongoDB collection level changes have been monitored and published to GCP PUB/SUB topic using python code. |
+| [MongoDB Database level change stream to Pub Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/DBLevelPubSub/README.md) | This pattern demonstrates how the MongoDB database level changes have been monitored and published to GCP PUB/SUB topic using python code. |
+| [Configuring BigQuery PubSub native connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/PubSubNativeConnector/README.md) | This pattern demonstrates consuming messages with defined schema from GCP PUB/SUB topic to GCP Bigquery table using native connector. |
+| [Configuring Dataflow template for PubSub to BQ](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/DataflowBq/README.md) | This pattern demonstrates the data streams from GCP Pub/Sub to the GCP bigquery table by Dataflow Job using template "PubSub Subscription to BigQuery". |
+| [Configuring BigQuery Kafka connector for MongoDB (either Confluent or Apache Kafka)](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/Confluentkafkamongodbtobq/README.md) | This pattern demonstrates the dataflow from MongoDB to the GCP bigquery table using the ConfluentKafka connector. |
+| [MongoDB to BigQuery sync using the Spark connector](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/SparkConnectorMongotoBq/README.md) | This pattern demonstrates the dataflow from MongoDB to the GCP bigquery table using Spark connector. |
+| [Real time integration of Vertex AI endpoint with change stream](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/VertexAIRealTimeIntegration/README.md) | This pattern demonstrates creation and deployment of Model on vertexAI and its real-time integration with MongoDB changestream. |
+| [Reverse batch sync from BigQuery to MongoDB](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/BQtoMongodb/README.md) | This pattern demonstrates the dataflow from GCP bigquery table to MongoDB collection by dataflow job using "BigQuery to MongoDB" template. |
+
 
 
 # Pre-requisite
