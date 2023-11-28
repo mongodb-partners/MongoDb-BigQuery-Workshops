@@ -33,6 +33,7 @@
 3. Open the terminal in the respective project folder and run the command:
 ```bash
 python main.py
+```
 
     
   
