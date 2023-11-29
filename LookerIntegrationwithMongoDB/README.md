@@ -1,34 +1,29 @@
 
 ## Overview
-   This pattern demonstrate how we can use looker as a product to explore, share, and visualize our data in MongoDB, So that we can make better business decisions.
+   This pattern demonstrate how we can use looker as a product to explore, share, and visualize our data in MongoDB so that we can make better business decisions.
    
 ## Pre-requisite
-
+   - **Access to Looker:**
+     * Ensure you have access to a Looker instance. Your organization might have its own Looker environment.
+     
    - **Connections to DB:**
-     * Creating the Connections to the DB in the looker is described [here](https://cloud.google.com/looker/docs/connecting-to-your-db)
+     
+     * Creating the Connections to the DB in the looker is described [here](https://www.mongodb.com/docs/bi-connector/current/connect/looker/)
+
+   - **Mongodb Atlas**
+     * Create the MongoDB cluster as described [here](https://cloud.google.com/looker/docs/db-config-mongodb#mongodb_atlas)
+     * Configuring the MongoDB Connector for BI as described [here](https://cloud.google.com/looker/docs/db-config-mongodb#configuring_the_mongodb_connector_for_bi)
+     * Adding the Looker server to the Atlas IP access list as described [here](https://cloud.google.com/looker/docs/db-config-mongodb#adding_the_looker_server_to_the_atlas_ip_access_list)
+     * Enabling the MongoDB Connector for BI as described [here](https://cloud.google.com/looker/docs/db-config-mongodb#enabling_the_mongodb_connector_for_bi)
+     * Mongodb collection **"sample_supplies.sales"** is used for the looker integration
 
    - **Project Creation:**
      * Creating the Project in the Looker is described [here](https://cloud.google.com/looker/docs/create-projects#creating_a_project)
-
-   - **MongoDb Collection:**
-     * Mongodb collection **"sample_supplies.sales"** is used for the looker integration
-
+       
    - **Looker Dashboard creation:**
      * Creating a dashboard from a Look or an Explore is described [here](https://cloud.google.com/looker/docs/creating-user-defined-dashboards#creating_a_dashboard_from_a_look_or_an_explore)
 
 ## Looker Integration with MongoDB:
-
-   - **Set Up Looker and Database Connection**
-
-        - **Access to Looker:**
-           Ensure you have access to a Looker instance. Your organization might have its own Looker environment.
-   
-        - **Connect to Database:**
-           In Looker, you need to connect to your database. This is typically done through the Admin section where you can add a new database connection by specifying the type of database (e.g., MongoBI.), and providing connection details like host, port, username, and password.
-
-          ![connection creation](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/0868c8e9-7b9a-4336-a8fd-b4ec63cb549b)
-
-          ![test connection](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/434769fa-c07f-4c35-9084-64b765d1be99)
    - **Create a Looker Project**
 
       - **Start a New Project:**
