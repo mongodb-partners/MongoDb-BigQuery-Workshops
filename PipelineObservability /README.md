@@ -7,11 +7,21 @@
 
     ![topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/b0d28333-abc8-445f-ba23-7b39117221d4)
 
-    Monitoring Collections:
-    Collection for Metrics:
-    
-    
-    
+- **Monitoring Collections:**
+  * Use the sample mongoDb collection **"sample_mflix.users"**
+
+- **Collection for Metrics:**
+  * Create a new Collection in the database **"sample_mflix.metrics"** Always update the count value by incrementing the count value.
+  ``` bash
+  {
+  "_id": {
+    "$oid": "6564cfd608e2f8f60850873b"
+  },
+  "metric_type": "pubsub",
+  "metric_name": "publishedcount",
+  "count": 0
+  }
+  ```  
 
 ## Monitoring the PUB/SUB Metrics:
 
