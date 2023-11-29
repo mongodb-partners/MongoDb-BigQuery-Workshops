@@ -52,10 +52,9 @@
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
 ## 1. Python
 
-Make sure you have Python installed on your system. If not, you can use the following command to install Python 3 using Homebrew (Mac users):
-```bash
-brew install python3
-```
+Make sure you have Python installed on your system. Follow steps described [here](https://www.tutorialsteacher.com/python/install-python)
+pip installation steps is described [here](https://www.geeksforgeeks.org/how-to-install-pip-on-windows/)
+
  **Poetry Setup**:
   ```bash
   pip3 install poetry
