@@ -33,6 +33,6 @@
   ![Application Uses Pub/Sub](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/8a2ba2e6-e090-494e-892a-8ff1a9ccaac6)
 
 ## Steps to Run Application
-1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required software.
+1. Follow the common readme [file](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/README.md) to install all the required applications and libraries.
 2. Update the required configuration details in the  [.env](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/blob/dev_bq-workshop_demo/CollectionLevelPubSub/.env) file.
 3. Open the terminal in the respective project folder and run the command "python main.py".
