@@ -3,12 +3,12 @@
    
 ## Pre-requisite
 - **Create a Pub/Sub Topic:**
-  * Create the GCP pub/Sub topic without defining the schema as described [here](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2)
+  * [Create](https://cloud.google.com/pubsub/docs/create-topic#create_a_topic_2) the GCP pub/Sub topic without defining the schema.
   
     ![Create a Pub/Sub Topic](https://github.com/mongodb-partners/MongoDb-BigQuery-Workshops/assets/109083730/80958e4f-e677-4976-a359-cedf101e6109)
 
 - **Create a Pub/Sub Subscription:**
-  * Create the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull** as described [here](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription)
+  * [Create](https://cloud.google.com/pubsub/docs/create-subscription#create_a_pull_subscription) the GCP pub/Sub Subscription with acknowledgment mode and **Delivery type: Pull** 
 
     **Screenshot 1 :**
 
