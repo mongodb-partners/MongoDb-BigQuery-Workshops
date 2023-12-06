@@ -22,8 +22,8 @@
 - **Log in**:
   * Log in to the MongoDB Atlas with existing account credentials.
 - **Create Cluster**:
-  * Create a cluster as described [here](https://www.mongodb.com/docs/guides/atlas/cluster/) 
-  * whitelist the required IPs to be accessed as described [here](https://www.mongodb.com/docs/atlas/security/ip-access-list/).
+  * Create a MongoDB Atlas [cluster](https://www.mongodb.com/docs/guides/atlas/cluster/) 
+  * [whitelist](https://www.mongodb.com/docs/atlas/security/ip-access-list/) the required IPs to be accessed as described.
 - **Create Database and Collection**:
   * Create the Database and the Collection in the Cluster.
     
