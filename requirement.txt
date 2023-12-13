@@ -1,0 +1,7 @@
+python = "3.9"
+Poetry = "1.4.2"
+pyenv = "2.3.29"
+pymongo = "6.0.4"
+Google-cloud-pubsub = "23.1"
+mongo-java-driver-3.12.14.jar
+mongo-spark-connector_2.12-2.4.0.jar
