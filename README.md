@@ -48,6 +48,16 @@
   * Click on the APIs and Service in the left panel, then enable the API's services.
 - Detailed steps for creating GCP Account can be found [here](https://www.geeksforgeeks.org/how-to-create-a-free-tier-account-on-gcp/)
 
+## Authenticate to Google Cloud project
+Use [gcloud](https://cloud.google.com/sdk/docs/install) utility tool to authenticate to Google Cloud project. Before starting with the workshop, please make sure that
+the [gcloud CLI](https://cloud.google.com/sdk/docs/install) is installed and up-to-date, and that the client is properly authenticated using:
+
+ * Login to gcloud and select the project using gcloud init command:
+   ``` gcloud init ```
+ * authenticate to application default login:
+   ``` gcloud auth application-default login ```
+
+
 ## Software to be Installed to Run the Application
 Before you start using this application, ensure that you have the necessary software and libraries installed. Follow these steps to set up your development environment:
 ## 1. Python
