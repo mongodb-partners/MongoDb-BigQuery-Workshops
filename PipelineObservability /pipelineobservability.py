@@ -27,7 +27,6 @@ class PipelineObservability:
         self.metriccollectionname = os.getenv('METRIC_COLL_NAME')
         
         self.gcptopicname = os.getenv(GCP_TOPIC_PATH)
-        self.service_account_json = os.getenv('GOOGLE_APPLICATION_CREDENTIALS')
         
     def to_perform_pipeline_observability(self):
         mongo_client = MongoClient(self.mongoconnstr ,tlsCAFile=certifi.where())
